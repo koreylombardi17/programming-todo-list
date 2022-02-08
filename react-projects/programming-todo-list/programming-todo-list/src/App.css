@@ -1,0 +1,90 @@
+:root {
+  --eggplant: #49274a;
+  --grape: #94618e;
+  --sand: #f4decb;
+  --shell: #f8eee7;
+  --border-radius: 10px;
+}
+
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grape);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  color: var(--shell);
+}
+
+input {
+  font-family: inherit;
+}
+
+.center {
+  margin: auto;
+  width: 50vw;
+  height: 80vw;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.header-container {
+  margin: 75px 0 10px 0;
+}
+
+.todos-container {
+  background-color: var(--grape);
+  margin: 5px 0 5px 0;
+}
+
+.todo-item-container-display {
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr;
+  margin: 5px 0 5px 0;
+  padding: 7px 0 0 7px;
+  border-radius: var(--border-radius);
+}
+
+.todo-item-container-style {
+  background-color: var(--sand);
+  color: var(--eggplant);
+}
+
+.new-todo-form-container {
+  background-color: var(--grape);
+  margin: 0 0 15px 0;
+}
+
+.new-todo-form-container form {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.new-todo-form-container input,
+button {
+  background-color: var(--sand);
+  border: 1px;
+  width: 98%;
+  height: 30px;
+  border-radius: var(--border-radius);
+}
+
+.new-todo-form-container input {
+  padding: 0 0 0 5px;
+}
