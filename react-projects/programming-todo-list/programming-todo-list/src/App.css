@@ -29,6 +29,7 @@ input {
   font-family: inherit;
 }
 
+/* Positioning */
 .center {
   margin: auto;
   width: 50vw;
@@ -43,14 +44,12 @@ input {
   width: 100%;
 }
 
-.completed {
-  text-decoration: line-through;
-}
-
+/* Header */
 .header-container {
   margin: 75px 0 10px 0;
 }
 
+/* Todos */
 .todos-container {
   background-color: var(--grape);
   margin: 5px 0 5px 0;
@@ -61,6 +60,7 @@ input {
   grid-template-columns: 10fr 1fr 1fr;
   margin: 5px 0 5px 0;
   padding: 7px 0 0 7px;
+  height: 2rem;
   border-radius: var(--border-radius);
 }
 
@@ -69,6 +69,11 @@ input {
   color: var(--eggplant);
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
+/* Form */
 .new-todo-form-container {
   background-color: var(--grape);
   margin: 0 0 15px 0;
@@ -79,15 +84,15 @@ input {
   grid-template-columns: 5fr 1fr;
 }
 
+.new-todo-form-container input {
+  padding: 0 0 0 5px;
+}
+
 .new-todo-form-container input,
 button {
   background-color: var(--sand);
   border: 1px;
   width: 98%;
-  height: 30px;
+  height: 2rem;
   border-radius: var(--border-radius);
-}
-
-.new-todo-form-container input {
-  padding: 0 0 0 5px;
 }
