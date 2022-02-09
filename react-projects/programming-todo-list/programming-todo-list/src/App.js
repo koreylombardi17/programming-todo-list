@@ -35,7 +35,7 @@ const App = () => {
   }, [todos]);
 
   return (
-    <div className="center">
+    <div className="center-todo-list">
       <Header />
       <TodoForm
         todos={todos}

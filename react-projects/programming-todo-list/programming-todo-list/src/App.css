@@ -30,7 +30,7 @@ input {
 }
 
 /* Positioning */
-.center {
+.center-todo-list {
   margin: auto;
   width: 50vw;
   height: 80vw;
@@ -55,6 +55,7 @@ input {
   margin: 5px 0 5px 0;
 }
 
+/* Todo */
 .todo-item-container-display {
   display: grid;
   grid-template-columns: 10fr 1fr 1fr;
@@ -71,6 +72,18 @@ input {
 
 .completed {
   text-decoration: line-through;
+}
+
+.center-icon-vertically {
+  display: flex;
+  align-items: center;
+  background-color: red;
+  height: 100%;
+}
+
+.center-icon-vertically svg {
+  margin: 0 auto;
+  display: block;
 }
 
 /* Form */

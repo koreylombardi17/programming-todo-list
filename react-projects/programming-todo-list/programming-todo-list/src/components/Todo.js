@@ -21,7 +21,7 @@ const Todo = ({ todo, todos, setTodos }) => {
   return (
     <div className="todo-item-container-display todo-item-container-style">
       <div className={`${todo.isComplete ? "completed" : ""}`}>{todo.text}</div>
-      <div>
+      <div className="center-icon-vertically">
         <CheckCircleIcon onClick={completeTodoHandler}></CheckCircleIcon>
       </div>
       <div>
