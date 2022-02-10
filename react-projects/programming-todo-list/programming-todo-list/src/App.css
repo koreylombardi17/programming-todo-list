@@ -4,6 +4,7 @@
   --sand: #f4decb;
   --shell: #f8eee7;
   --border-radius: 10px;
+  --box-shadow: 2px 2px #49274a;
 }
 
 *,
@@ -13,7 +14,6 @@
 }
 
 /* TODO : style box-shadow */
-/* TODO: Make text input the same size as todo entries */
 
 body {
   background-color: var(--grape);
@@ -33,11 +33,18 @@ input {
 .center-todo-list {
   margin: auto;
   width: 50vw;
+  max-width: 450px;
   height: 80vw;
 }
 
 .center-text {
   text-align: center;
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .full-width {
@@ -58,9 +65,9 @@ input {
 /* Todo */
 .todo-item-container-display {
   display: grid;
-  grid-template-columns: 10fr 1fr 1fr;
+  grid-template-columns: 13fr 1fr 1fr;
   margin: 5px 0 5px 0;
-  padding: 7px 0 0 7px;
+  padding: 0 10px 0 10px;
   height: 2rem;
   border-radius: var(--border-radius);
 }
@@ -68,17 +75,11 @@ input {
 .todo-item-container-style {
   background-color: var(--sand);
   color: var(--eggplant);
+  box-shadow: var(--box-shadow);
 }
 
 .completed {
   text-decoration: line-through;
-}
-
-.center-icon-vertically {
-  display: flex;
-  align-items: center;
-  background-color: red;
-  height: 100%;
 }
 
 .center-icon-vertically svg {
@@ -98,7 +99,7 @@ input {
 }
 
 .new-todo-form-container input {
-  padding: 0 0 0 5px;
+  padding: 0 0 0 10px;
 }
 
 .new-todo-form-container input,
@@ -108,4 +109,5 @@ button {
   width: 98%;
   height: 2rem;
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }

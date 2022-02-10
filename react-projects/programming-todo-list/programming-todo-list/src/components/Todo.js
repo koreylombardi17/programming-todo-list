@@ -20,11 +20,15 @@ const Todo = ({ todo, todos, setTodos }) => {
 
   return (
     <div className="todo-item-container-display todo-item-container-style">
-      <div className={`${todo.isComplete ? "completed" : ""}`}>{todo.text}</div>
-      <div className="center-icon-vertically">
+      <div
+        className={`center-vertically ${todo.isComplete ? "completed" : ""}`}
+      >
+        {todo.text}
+      </div>
+      <div className="center-vertically">
         <CheckCircleIcon onClick={completeTodoHandler}></CheckCircleIcon>
       </div>
-      <div>
+      <div className="center-vertically">
         <DeleteIcon onClick={deleteTodoHandler}></DeleteIcon>
       </div>
     </div>
